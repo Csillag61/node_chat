@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:3001', // Your frontend URL
+    origin: 'http://localhost:3000', // Your frontend URL
     methods: ['GET', 'POST'],
   },
 });
@@ -19,7 +19,7 @@ const cors = require('cors');
 
 app.use(
   cors({
-    origin: 'http://localhost:3001', // Replace with your frontend URL
+    origin: 'http://localhost:3000', // Replace with your frontend URL
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
     credentials: true,
